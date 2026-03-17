@@ -30,25 +30,38 @@ public class CheckoutBuffer {
 
         int maxWt = sc.nextInt();
 
-        System.out.println(Maxitems(weights, maxWt));
+        System.out.println(MaxItems(weights, maxWt));
 
         sc.close();
     }
 
-    public static ArrayList Maxitems(int[] weights, int maxWt) {
-        Arrays.sort(weights);
+    public static int MaxItems(int[] weights, int maxWt) {
+        int i = 0;
+        int maxCount = 0;
+        int currWt = 0;
 
-        ArrayList<Integer> weight = new ArrayList<>();
+        for (int j = 0; j < weights.length; j++) {
+            currWt += weights[j];
 
-        int wt = 0;
-        for (int ele : weights) {
-            if (wt + ele > maxWt) {
-                break;
+            while (currWt > maxWt && i <= j) {
+                currWt -= weights[i];
+                i++;
             }
-            wt += ele;
-            weight.add(ele);
+            maxCount = Math.max(maxCount, j - i + 1);
         }
-        return weight;
+        return maxCount;
 
     }
+
+    // public static ArrayList Maxitems(int[] weights, int max Wt) {
+//    Arrays.sort(weights);
+    //     ArrayList<Integer> weight = new ArrayList<>();
+    //     int wt = 0;
+    //         if (wt + ele > maxWt) {
+    //         }
+    //         wt += ele;
+    //         weight.add(ele);
+    //     }
+    //     return weight;
+    // }
 }

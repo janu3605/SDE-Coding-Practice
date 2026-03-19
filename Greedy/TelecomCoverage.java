@@ -22,18 +22,6 @@ import java.util.*;
 
 public class TelecomCoverage {
 
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        int[] houses = Arrays.stream(sc.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
-        Arrays.sort(houses);
-
-        int coverage = sc.nextInt();
-
-        TowerPlaced(houses, coverage);
-
-    }
-
     public static void TowerPlaced(int[] houses, int coverage) {
         int i = 0;
         ArrayList<Integer> towerLoc = new ArrayList<>();
@@ -53,4 +41,17 @@ public class TelecomCoverage {
         }
         System.out.println(towerLoc);
     }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int[] houses = Arrays.stream(sc.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+        Arrays.sort(houses);
+
+        int coverage = sc.nextInt();
+
+        TowerPlaced(houses, coverage);
+
+    }
+
 }

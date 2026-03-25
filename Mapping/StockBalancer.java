@@ -15,6 +15,7 @@ package Mapping;
  * Explanation: The subarray [0, 1, 0, 0, 1, 1] (from index 0 to 5) has three 0s
  * and three 1s.
  */
+
 import java.util.*;
 
 public class StockBalancer {

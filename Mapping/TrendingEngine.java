@@ -61,7 +61,6 @@ public class TrendingEngine {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int[] productIds = Arrays.stream(sc.nextLine().split(", "))
-                .map(String::trim)
                 .mapToInt(Integer::parseInt)
                 .toArray();
         int k = sc.nextInt();

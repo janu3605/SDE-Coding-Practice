@@ -1,3 +1,5 @@
+package BasicCoding;
+
 
 public class HarmonicString {
 

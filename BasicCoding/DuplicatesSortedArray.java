@@ -1,7 +1,5 @@
-package BasicCoding;
 
-import java.util.LinkedHashSet;
-import java.util.Set;
+import java.util.*;
 
 public class DuplicatesSortedArray {
 
@@ -12,6 +10,7 @@ public class DuplicatesSortedArray {
         // System.out.println(Arrays.toString(res));
     }
 // 1.ArrayList
+
     // public static int[] removeDuplicates(int[] arr) {
     //     ArrayList<Integer> res = new ArrayList<>();
     //     for (int i = 0; i < arr.length; i++) {
@@ -24,7 +23,6 @@ public class DuplicatesSortedArray {
     //     int[] ans = res.stream().mapToInt(Integer::intValue).toArray();
     //     return ans;
     // }
-
     // 2. LinkedHashSet
     public static void removeDuplicates(int[] arr) {
         Set<Integer> ans = new LinkedHashSet<>();
@@ -33,5 +31,4 @@ public class DuplicatesSortedArray {
         }
         System.out.println(ans.toString());
     }
-
 }

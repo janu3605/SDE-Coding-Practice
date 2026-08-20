@@ -1,3 +1,5 @@
+package BasicCoding;
+
 
 public class MaxFuelVolume {
 
@@ -18,6 +20,9 @@ public class MaxFuelVolume {
             for (int j = k; j >= price; j--) {
                 dp[j] = Math.max(dp[j], dp[j - price] + volume);
             }
+        }
+        for (int i = 0; i <= k; i++) {
+            System.out.print(dp[i] + " ");
         }
         System.out.println(dp[k]);
     }

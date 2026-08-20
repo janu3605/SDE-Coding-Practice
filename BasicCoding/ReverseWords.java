@@ -7,15 +7,15 @@ public class ReverseWords {
         Reverse(words);
     }
     // 1. StringBuilder
-    // public static void Reverse(String[] words) {
-    //     StringBuilder sb = new StringBuilder();
+    public static void Reverse(String[] words) {
+        StringBuilder sb = new StringBuilder();
 
-    //     for (String str : words) {
-    //         String word = new StringBuilder(str).reverse().toString();
-    //         sb.append(word + " ");
-    //     }
-    //     System.out.println(sb.toString());
-    // }
+        for (String str : words) {
+            String word = new StringBuilder(str).reverse().toString();
+            sb.append(word + " ");
+        }
+        System.out.println(sb.toString());
+    }
     // 2. Character Array 2 pointer
     // public static String reverseWords(String sentence) {
     //     if (sentence == null || sentence.isEmpty()) return sentence;

@@ -14,10 +14,10 @@ public class LastDigitofPower {
 // 2. Cycle Rule 4 last digits only possible
 
     public static void lastDigit(int base, int exp) {
-        int lastDigit = base % 10;
+        int lastDigit = base % 10; 
 
         int rem = exp % 4;
         int power = (rem == 0) ? 4 : rem;
-        System.out.println(Math.pow(lastDigit, power) % 10);
+        System.out.println(Math.pow(lastDigit, power) % 10); 
     }
 }

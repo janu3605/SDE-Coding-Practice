@@ -1,0 +1,38 @@
+12A -> We Seperate the digits from the letters in the string.
+```     
+//  Method 1
+    String str = "12A";
+    int i = 0;
+    while (i < str.length() && Character.isDigit(str.charAt(i))) {
+        i++;
+    }
+    int count = Integer.parseInt(str.substring(0, i));
+    char button = part.charAt(i);
+
+
+//  Method 2
+    int k=0
+    for (char ch : str.toCharArray()) { 
+        if (Character.isDigit(ch)) {
+            k = k * 10 + (ch - '0');
+        }
+    }
+
+```
+
+Itterating through a Map, to use the key and value to create a new string with the format value + key.
+```
+    StringBuilder result = new StringBuilder();
+    for (Map.Entry<Character, Integer> entry : totals.entrySet()) {
+        result.append(entry.getValue()).append(entry.getKey());
+    }
+```
+
+Powers of any digit have only 4 variations in the last digit. 
+```
+        int lastDigit = base % 10; 
+
+        int rem = exp % 4;
+        int power = (rem == 0) ? 4 : rem;
+        System.out.println(Math.pow(lastDigit, power) % 10); 
+```     

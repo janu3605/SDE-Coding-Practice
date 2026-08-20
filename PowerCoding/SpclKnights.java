@@ -1,3 +1,5 @@
+package PowerCoding;
+
 
 public class SpclKnights {
 

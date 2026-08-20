@@ -1,4 +1,4 @@
-package BasicCoding;
+package PowerCoding;
 
 import java.util.HashMap;
 import java.util.Map;

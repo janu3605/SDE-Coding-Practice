@@ -19,8 +19,7 @@ class MaxSubArr {
         }
         return maxSum;
     }
-
-    //  kadanes with indices
+// 2. kadanes with indices
     public static int idxkadane(int[] arr) {
         int maxSum = arr[0];
         int currentSum = arr[0];

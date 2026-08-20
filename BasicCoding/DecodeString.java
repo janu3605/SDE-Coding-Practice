@@ -1,4 +1,3 @@
-package BasicCoding;
 
 import java.util.Stack;
 
@@ -47,7 +46,7 @@ public class DecodeString {
             } else {
                 currentString.append(ch);
             }
-            System.out.println(currentString.toString());
         }
+        System.out.println(currentString.toString());
     }
 }

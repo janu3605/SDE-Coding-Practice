@@ -8,8 +8,8 @@ public class ReverseArray {
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 4, 5};
         int[] rev = reverse(arr);
-        reverse();
         System.out.println(Arrays.toString(rev));
+        reverse();
     }
 
     // 1. Using two pointers

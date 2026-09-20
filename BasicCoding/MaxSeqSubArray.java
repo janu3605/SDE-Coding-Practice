@@ -1,4 +1,4 @@
-package BasicCoding;
+// package BasicCoding;
 
 //  Produce the highest sum of a subarray with alternating signs.
 public class MaxSeqSubArray {
@@ -9,11 +9,12 @@ public class MaxSeqSubArray {
         int maxSum = nums[1];
         
         boolean sign;
-        if (nums[0] > 0) {
-            sign = true;
-        } else {
-            sign = false;
-        }
+        sign = nums[0] > 0 ? true : false;
+        // if (nums[0] > 0) {
+        //     sign = true;
+        // } else {
+        //     sign = false;
+        // }
 
         for (int i = 1; i < nums.length; i++) {
             maxSum = Math.max(maxSum, currSum);

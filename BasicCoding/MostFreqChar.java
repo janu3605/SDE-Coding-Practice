@@ -1,4 +1,4 @@
-package BasicCoding;
+// package BasicCoding;
 
 public class MostFreqChar {
 
@@ -15,7 +15,7 @@ public class MostFreqChar {
         int maxFreq = 0;
         char mostFreqChar = ' ';
 
-        for (int i = 0; i < freq.length; i++) {
+        for (int i = 0; i < 26; i++) {
             if (freq[i] > maxFreq) {
                 maxFreq = freq[i];
                 mostFreqChar = (char) (i + 'a');

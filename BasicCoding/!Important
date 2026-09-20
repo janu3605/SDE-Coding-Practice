@@ -36,3 +36,7 @@ Powers of any digit have only 4 variations in the last digit.
         int power = (rem == 0) ? 4 : rem;
         System.out.println(Math.pow(lastDigit, power) % 10); 
 ```     
+
+``` Sorting ArrayList of int[] based on the first element, then the second element.
+    Arrays.sort(arr, (a, b) -> Integer.compare(a[0], b[0]));
+ ```

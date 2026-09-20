@@ -23,14 +23,15 @@ public class DroneNavigator {
 
         for (int i = 0; i < batteryCharges.length; i++) {
 
-            // if our current position is further than our maximum allowed reach, 
+            // if our current position is further than our maximum allowed reach,
             // it means we got stranded at a 0 battery pad earlier!
             if (i > furthestReach) {
                 return false;
             }
 
-            // push the boundary! 
-            // is our current boundary better, or is the (current index + battery here) better?
+            // push the boundary!
+            // is our current boundary better, or is the (current index + battery here)
+            // better?
             furthestReach = Math.max(furthestReach, i + batteryCharges[i]);
 
             // optional optimization: if our boundary is already past the end, we win early.

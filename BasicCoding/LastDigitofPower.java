@@ -1,4 +1,4 @@
-package BasicCoding;
+// package BasicCoding;
 
 public class LastDigitofPower {
 

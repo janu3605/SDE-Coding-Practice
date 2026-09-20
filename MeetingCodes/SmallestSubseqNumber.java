@@ -11,12 +11,14 @@ public class SmallestSubseqNumber {
         int D = s.length();
         int min = Integer.MAX_VALUE;
 
-        int totalMasks = 1 << D; // 2^D - 1
+        int totalMasks = 1 << D; // 2^D - 1   
+        // a << b -> a * 2^b
+        // a >> b -> a/2^b
 
         for (int mask = 1; mask < totalMasks; mask++) {
             StringBuilder sb = new StringBuilder();
             for (int i = 0; i < D; i++) {
-                if (((mask >> (D - 1 - i)) & 1) == 1) {
+                if (((mask >> (D - 1 - i)) & 1) == 1) { // mask / 2 ^ (D-1-i)
                     sb.append(s.charAt(i));
                 }
             }

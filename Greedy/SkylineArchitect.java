@@ -27,7 +27,6 @@
  * Output: [-1, 12, 12, -1]
  */
 
-
 // public static int[] findNextTaller(int[] heights) {
 //     int max = heights[heights.length - 1];
 //     int[] ans = new int[heights.length];
@@ -39,7 +38,6 @@
 //     return ans;
 // }
 
-
 import java.util.*;
 
 public class SkylineArchitect {
@@ -49,7 +47,7 @@ public class SkylineArchitect {
         Stack<Integer> stack = new Stack<>();
 
         for (int i = heights.length - 1; i >= 0; i--) {
-
+            System.out.println(stack.toString());
             while (!stack.isEmpty() && stack.peek() <= heights[i]) {
                 stack.pop();
             }

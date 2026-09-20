@@ -22,6 +22,7 @@ public class JerseyArrangement {
                 System.out.println(ans);
                 break;
             }
+            // System.out.println(Arrays.toString(next));
         }
 
     }

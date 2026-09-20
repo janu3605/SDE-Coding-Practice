@@ -28,6 +28,7 @@ public class ClusterOptimizer {
         Arrays.sort(reservations, (a, b) -> Integer.compare(a[0], b[0]));
 
         for (int[] current : reservations) {
+            // System.out.println(Arrays.toString(merged));
             if (merged.isEmpty() || current[0] > merged.get(merged.size() - 1)[1]) {
                 merged.add(current);
             } else {

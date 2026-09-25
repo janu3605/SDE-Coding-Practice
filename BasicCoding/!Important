@@ -40,3 +40,12 @@ Powers of any digit have only 4 variations in the last digit.
 ``` Sorting ArrayList of int[] based on the first element, then the second element.
     Arrays.sort(arr, (a, b) -> Integer.compare(a[0], b[0]));
  ```
+
+```
+ regex : "[^a-z]"
+ Everything that isnt a-z ^-> is not 
+
+    c - 'a' gives alphabet wise numbering a = 0, b = 1 ...
+    Similar to  c - '0' for number characters.
+```
+

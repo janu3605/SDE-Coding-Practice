@@ -10,11 +10,6 @@ public class MaxSeqSubArray {
         
         boolean sign;
         sign = nums[0] > 0 ? true : false;
-        // if (nums[0] > 0) {
-        //     sign = true;
-        // } else {
-        //     sign = false;
-        // }
 
         for (int i = 1; i < nums.length; i++) {
             maxSum = Math.max(maxSum, currSum);

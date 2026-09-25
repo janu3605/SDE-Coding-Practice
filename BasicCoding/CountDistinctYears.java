@@ -1,4 +1,4 @@
-package BasicCoding;
+// package BasicCoding;
 
 public class CountDistinctYears {
 
@@ -8,7 +8,9 @@ public class CountDistinctYears {
         String[] words = str.split(" ");
 
         for (String word : words) {
-            if (word.matches(".*\\d{2}-\\d{2}-\\d{4}.*")) {
+            if (word.matches(".*\\d{2}-\\d{2}-\\d{4}.*")) { // Exact format
+                // If using ".*\\d{2}-\\d{2}-\\d{4}.*" accepts any atttached values, eg:
+                // 15-08-1945. (Full stop).
                 System.out.println(word);
             }
         }

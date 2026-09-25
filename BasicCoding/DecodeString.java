@@ -1,27 +1,27 @@
-
-import java.util.Stack;
+import java.util.*;
 
 public class DecodeString {
 
     public static void main(String[] args) {
         String str = "13[a]2[bc]";
-        //  1. Using StringBuilder and repeat method
-        // for (int i = 0; i < str.length(); i++) {
-        //     if (Character.isDigit(str.charAt(i))) {
-        //         int n = Character.getNumericValue(str.charAt(i));
-        //         if (str.charAt(i + 1) == '[') {
-        //             StringBuilder sb = new StringBuilder();
-        //             int j = i + 2;
-        //             while (str.charAt(j) != ']') {
-        //                 sb.append(str.charAt(j));
-        //                 j++;
-        //             }
-        //             String repeatedString = sb.toString().repeat(n);
-        //             System.out.print(repeatedString);
-        //             i = j;
-        //         }
-        //     }
+        // 1. Using StringBuilder and repeat method
+        // int k = 0;
+        // for (int i = 0; i < str.length() - 1; i++) {
+        // if (Character.isDigit(str.charAt(i))) {
+        // k = k * 10 + (str.charAt(i) - '0');
+        // } else if (str.charAt(i + 1) == '[') {
+        // StringBuilder sb = new StringBuilder();
+        // int j = i + 2;
+        // while (str.charAt(j) != ']') {
+        // sb.append(str.charAt(j));
+        // j++;
         // }
+        // String repeatedString = sb.toString().repeat(k);
+        // System.out.print(repeatedString);
+        // i = j;
+        // }
+        // }
+
         // 2. Using Stacks
         Stack<Integer> countStack = new Stack<>();
         Stack<String> stringStack = new Stack<>();

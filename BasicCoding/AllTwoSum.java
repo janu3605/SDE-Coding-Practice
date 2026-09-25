@@ -18,10 +18,10 @@ public class AllTwoSum {
             int complement = target - nums[i];
 
             if (map.containsKey(complement)) {
-                list.add(new int[] { map.get(complement), i });
+                list.add(new int[] { map.get(complement), nums[i] });
             }
 
-            map.put(nums[i], i);
+            map.put(nums[i], map.get(complement) != null ? map.get(complement) : nums[i]);
         }
         return list;
 

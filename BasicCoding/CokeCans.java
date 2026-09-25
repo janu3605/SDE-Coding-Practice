@@ -3,7 +3,7 @@ public class CokeCans {
 
     public static void main(String[] args) {
         int Twox = 5; // 2 cans for $5
-        int Fourx = 10; // 4 cans for $10
+        int Fourx = 8; // 4 cans for $8
 
         int x = 148; //  Total money Tony has
 

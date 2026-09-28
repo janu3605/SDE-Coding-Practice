@@ -1,3 +1,5 @@
+package AssessmentCodes;
+
 public class ReduceBill {
     public static void main(String[] args) {
         int n = 13;

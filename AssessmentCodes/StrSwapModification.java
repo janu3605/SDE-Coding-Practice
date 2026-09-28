@@ -1,7 +1,7 @@
 package AssessmentCodes;
 // In this qn
-
-//  If one swap first N by 2 and last N by two characters of string
+// if 0 swap first char to last char
+//  If 1 swap first half and last half
 
 public class StrSwapModification {
     public static void main(String[] args) {

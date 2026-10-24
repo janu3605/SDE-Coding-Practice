@@ -1,4 +1,11 @@
 {
     "java.debug.settings.onBuildFailureProceed": true,
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "folder-color.pathColors": [
+        {
+            "folderPath": "SDE-Coding-Practice\\TCS_CodeVita\\",
+            "isFolderOnly": true,
+            "color": "foldercolorizer.color_5f5fd7"
+        }
+    ]
 }
